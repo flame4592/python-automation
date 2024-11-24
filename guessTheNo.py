@@ -1,4 +1,4 @@
-import random
+import random, sys
 
 randNo = random.randint(1, 10)
 print ( " guess a number between 1 to 10 ")
@@ -9,7 +9,7 @@ while True:
     
     if guess == randNo:
         print ( " you guessed it right")
-        break
+        sys.exit()
     
     elif guess > randNo:
             print ( " your guess is higher, try again ")
